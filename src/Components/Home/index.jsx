@@ -15,7 +15,7 @@ const Home = () => {
         const trimmedWord = lowerCase.trim(); // trim() method removes any extra spaces in the word
         if (!trimmedWord || trimmedWord.split(' ').length > 1 ) // split() method use for double word if double word then nothing happens b/c lenght will be > 1
         return;
-        history.push(`/search/${trimmedWord}`); // takes the path and puushes the user to the specific path using history hook
+        history.push(`/search/${trimmedWord}`); // takes the path and pushes the user to the specific path using history hook
     }
     return (
         <Box sx={{
